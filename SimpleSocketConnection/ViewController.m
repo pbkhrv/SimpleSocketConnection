@@ -50,7 +50,6 @@
 #pragma mark - Public methods
 
 - (IBAction)connect:(id)sender {
-  NSLog(@"User tapped 'Connect'");
   [[NetworkController sharedInstance] connect];
 }
 

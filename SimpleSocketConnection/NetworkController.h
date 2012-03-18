@@ -38,15 +38,15 @@ typedef void (^MessageBlock)(NetworkController*,NSString*);
   NSString* host;
   int port;
   
-  // Read stream
+  // Input
   NSInputStream* inputStream;
-  BOOL isInputStreamOpen;
   NSMutableData* inputBuffer;
+  BOOL isInputStreamOpen;
   
-  // Write stream
+  // Output
   NSOutputStream* outputStream;
-  BOOL isOutputStreamOpen;
   NSMutableData* outputBuffer;
+  BOOL isOutputStreamOpen;
   
   // Event handlers
   MessageBlock messageReceivedBlock;

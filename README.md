@@ -10,11 +10,13 @@ Its purpose is to demonstrate a couple of things:
 ### Running a server using netcat
 
 In order to fully use the app, you will need a server to connect to.
-The easiest way to create a TCP/IP server is a command-line utility called 'nc' (or netcat) that comes with OS X:
+The easiest way to create a TCP/IP server is by using a command-line utility called 'nc' (or netcat) that comes with OS X:
 
 1. Open your OS X terminal and run the following command:
 
        nc -k -l 45678
+
+('-k' means "Keep running even after client disconnects", and '-l' means "listen on the specified port")
 
 
 ### Running the app in Simulator

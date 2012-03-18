@@ -36,10 +36,11 @@
 - (BOOL)openConnection;
 - (void)closeConnection;
 - (BOOL)isConnected;
-- (void)notifyConnectionBlock:(ConnectionBlock)block;
+- (void)finishOpeningConnection;
 - (void)readFromStreamToInputBuffer;
 - (void)parseIncomingData;
 - (void)writeOutputBufferToStream;
+- (void)notifyConnectionBlock:(ConnectionBlock)block;
 
 @end
 
@@ -69,14 +70,11 @@ static id sharedInstance = nil;
 
 - (void)connect {
   if (![self isConnected]) {
-    NSLog(@"Initiating connection");
-
     // Ideally this will come from configuration or Bonjour.
     host = @"localhost";
     port = 45678;
 
     if (![self openConnection]) {
-      NSLog(@"Failed to open connection");
       [self notifyConnectionBlock:connectionFailedBlock];
     }
   }
@@ -101,11 +99,6 @@ static id sharedInstance = nil;
 - (id)init {
   messageDelimiter = @"\n";
   return self;
-}
-
-- (void)notifyConnectionBlock:(ConnectionBlock)block {
-  if (block != nil)
-    block(self);
 }
 
 - (BOOL)openConnection {
@@ -179,9 +172,8 @@ static id sharedInstance = nil;
   return (isInputStreamOpen && isOutputStreamOpen);
 }
 
-- (void)streamOpened {
+- (void)finishOpeningConnection {
   if (isInputStreamOpen && isOutputStreamOpen) {
-    NSLog(@"Connection established successfully");
     [self notifyConnectionBlock:connectionOpenedBlock];
     [self writeOutputBufferToStream];
   }
@@ -266,6 +258,11 @@ static id sharedInstance = nil;
                              length:0];
 }
 
+- (void)notifyConnectionBlock:(ConnectionBlock)block {
+  if (block != nil)
+    block(self);
+}
+
 
 #pragma mark - NSStreamDelegate methods
   
@@ -276,7 +273,7 @@ static id sharedInstance = nil;
 
       case NSStreamEventOpenCompleted:
         isInputStreamOpen = YES;
-        [self streamOpened];
+        [self finishOpeningConnection];
         break;
 
       case NSStreamEventHasBytesAvailable:
@@ -300,7 +297,7 @@ static id sharedInstance = nil;
 
       case NSStreamEventOpenCompleted:
         isOutputStreamOpen = YES;
-        [self streamOpened];
+        [self finishOpeningConnection];
         break;
 
       case NSStreamEventHasBytesAvailable:
