@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		93559A781512C03900D4BA1B /* UITextView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 93559A761512C03900D4BA1B /* UITextView+Utils.m */; };
+		93559A7D1515520000D4BA1B /* NetworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CFE2521508DC6B0051468E /* NetworkController.m */; };
+		93CFE21A1508D8800051468E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CFE2191508D8800051468E /* UIKit.framework */; };
+		93CFE21C1508D8800051468E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CFE21B1508D8800051468E /* Foundation.framework */; };
+		93CFE21E1508D8800051468E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CFE21D1508D8800051468E /* CoreGraphics.framework */; };
+		93CFE2241508D8800051468E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93CFE2221508D8800051468E /* InfoPlist.strings */; };
+		93CFE2261508D8800051468E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CFE2251508D8800051468E /* main.m */; };
+		93CFE22A1508D8800051468E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CFE2291508D8800051468E /* AppDelegate.m */; };
+		93CFE22D1508D8800051468E /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93CFE22B1508D8800051468E /* MainStoryboard_iPhone.storyboard */; };
+		93CFE2331508D8800051468E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CFE2321508D8800051468E /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		93559A761512C03900D4BA1B /* UITextView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Utils.m"; sourceTree = "<group>"; };
+		93559A771512C03900D4BA1B /* UITextView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Utils.h"; sourceTree = "<group>"; };
+		93CFE2151508D8800051468E /* SimpleSocketConnection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleSocketConnection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93CFE2191508D8800051468E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		93CFE21B1508D8800051468E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		93CFE21D1508D8800051468E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		93CFE2211508D8800051468E /* SimpleSocketConnection-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleSocketConnection-Info.plist"; sourceTree = "<group>"; };
+		93CFE2231508D8800051468E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		93CFE2251508D8800051468E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		93CFE2271508D8800051468E /* SimpleSocketConnection-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleSocketConnection-Prefix.pch"; sourceTree = "<group>"; };
+		93CFE2281508D8800051468E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		93CFE2291508D8800051468E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		93CFE22C1508D8800051468E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		93CFE2311508D8800051468E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		93CFE2321508D8800051468E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		93CFE23A1508D8800051468E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		93CFE2511508DC6B0051468E /* NetworkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkController.h; sourceTree = "<group>"; };
+		93CFE2521508DC6B0051468E /* NetworkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93CFE2121508D8800051468E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93CFE21A1508D8800051468E /* UIKit.framework in Frameworks */,
+				93CFE21C1508D8800051468E /* Foundation.framework in Frameworks */,
+				93CFE21E1508D8800051468E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		93559A741512C02B00D4BA1B /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				93559A761512C03900D4BA1B /* UITextView+Utils.m */,
+				93559A771512C03900D4BA1B /* UITextView+Utils.h */,
+			);
+			name = Misc;
+			sourceTree = "<group>";
+		};
+		93CFE20A1508D87F0051468E = {
+			isa = PBXGroup;
+			children = (
+				93CFE21F1508D8800051468E /* SimpleSocketConnection */,
+				93CFE2181508D8800051468E /* Frameworks */,
+				93CFE2161508D8800051468E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		93CFE2161508D8800051468E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93CFE2151508D8800051468E /* SimpleSocketConnection.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93CFE2181508D8800051468E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93CFE2191508D8800051468E /* UIKit.framework */,
+				93CFE21B1508D8800051468E /* Foundation.framework */,
+				93CFE21D1508D8800051468E /* CoreGraphics.framework */,
+				93CFE23A1508D8800051468E /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		93CFE21F1508D8800051468E /* SimpleSocketConnection */ = {
+			isa = PBXGroup;
+			children = (
+				93559A741512C02B00D4BA1B /* Misc */,
+				93CFE2511508DC6B0051468E /* NetworkController.h */,
+				93CFE2521508DC6B0051468E /* NetworkController.m */,
+				93CFE2311508D8800051468E /* ViewController.h */,
+				93CFE2321508D8800051468E /* ViewController.m */,
+				93CFE2281508D8800051468E /* AppDelegate.h */,
+				93CFE2291508D8800051468E /* AppDelegate.m */,
+				93CFE22B1508D8800051468E /* MainStoryboard_iPhone.storyboard */,
+				93CFE2201508D8800051468E /* Supporting Files */,
+			);
+			path = SimpleSocketConnection;
+			sourceTree = "<group>";
+		};
+		93CFE2201508D8800051468E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93CFE2211508D8800051468E /* SimpleSocketConnection-Info.plist */,
+				93CFE2221508D8800051468E /* InfoPlist.strings */,
+				93CFE2251508D8800051468E /* main.m */,
+				93CFE2271508D8800051468E /* SimpleSocketConnection-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93CFE2141508D8800051468E /* SimpleSocketConnection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93CFE24B1508D8800051468E /* Build configuration list for PBXNativeTarget "SimpleSocketConnection" */;
+			buildPhases = (
+				93CFE2111508D8800051468E /* Sources */,
+				93CFE2121508D8800051468E /* Frameworks */,
+				93CFE2131508D8800051468E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleSocketConnection;
+			productName = SimpleSocketConnection;
+			productReference = 93CFE2151508D8800051468E /* SimpleSocketConnection.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93CFE20C1508D87F0051468E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 93CFE20F1508D87F0051468E /* Build configuration list for PBXProject "SimpleSocketConnection" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 93CFE20A1508D87F0051468E;
+			productRefGroup = 93CFE2161508D8800051468E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93CFE2141508D8800051468E /* SimpleSocketConnection */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93CFE2131508D8800051468E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93CFE2241508D8800051468E /* InfoPlist.strings in Resources */,
+				93CFE22D1508D8800051468E /* MainStoryboard_iPhone.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93CFE2111508D8800051468E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93CFE2261508D8800051468E /* main.m in Sources */,
+				93CFE22A1508D8800051468E /* AppDelegate.m in Sources */,
+				93CFE2331508D8800051468E /* ViewController.m in Sources */,
+				93559A781512C03900D4BA1B /* UITextView+Utils.m in Sources */,
+				93559A7D1515520000D4BA1B /* NetworkController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		93CFE2221508D8800051468E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93CFE2231508D8800051468E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		93CFE22B1508D8800051468E /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93CFE22C1508D8800051468E /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93CFE2491508D8800051468E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		93CFE24A1508D8800051468E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93CFE24C1508D8800051468E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleSocketConnection/SimpleSocketConnection-Prefix.pch";
+				INFOPLIST_FILE = "SimpleSocketConnection/SimpleSocketConnection-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		93CFE24D1508D8800051468E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleSocketConnection/SimpleSocketConnection-Prefix.pch";
+				INFOPLIST_FILE = "SimpleSocketConnection/SimpleSocketConnection-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93CFE20F1508D87F0051468E /* Build configuration list for PBXProject "SimpleSocketConnection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93CFE2491508D8800051468E /* Debug */,
+				93CFE24A1508D8800051468E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93CFE24B1508D8800051468E /* Build configuration list for PBXNativeTarget "SimpleSocketConnection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93CFE24C1508D8800051468E /* Debug */,
+				93CFE24D1508D8800051468E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 93CFE20C1508D87F0051468E /* Project object */;
+}

@@ -1,0 +1,5 @@
+.DS_Store
+SimpleSocketConnection.xcodeproj/project.xcworkspace/xcuserdata/
+SimpleSocketConnection.xcodeproj/xcuserdata/
+*.swp
+*.un~
