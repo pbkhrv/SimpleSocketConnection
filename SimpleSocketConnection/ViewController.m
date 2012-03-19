@@ -103,7 +103,7 @@
 
 
 #pragma mark - UITextFieldDelegate methods
-
+// Called when user taps 'enter' on the on-screen keyboard
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
   [[NetworkController sharedInstance] sendMessage:textField.text];
   [self displayMessage:textField.text];

@@ -70,10 +70,6 @@ static id sharedInstance = nil;
 
 - (void)connect {
   if (![self isConnected]) {
-    // Ideally this will come from configuration or Bonjour.
-    host = @"localhost";
-    port = 45678;
-
     if (![self openConnection]) {
       [self notifyConnectionBlock:connectionFailedBlock];
     }
@@ -97,6 +93,9 @@ static id sharedInstance = nil;
 #pragma mark - Private methods
 
 - (id)init {
+  // This might come from some configuration store or Bonjour.
+  host = @"localhost";
+  port = 45678;
   messageDelimiter = @"\n";
   return self;
 }
